@@ -309,6 +309,6 @@ section > table {
 
 @media (max-width: 400px) {
   .authorlink{
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
