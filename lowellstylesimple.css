@@ -237,6 +237,10 @@ section > table {
   display: none;
 }
 
+.authorlink {
+  padding-top: 70px;
+}
+
 @media (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
