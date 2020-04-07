@@ -237,7 +237,7 @@ section > table {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
@@ -245,11 +245,10 @@ section > table {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .navbar.responsive {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #111;
     position: fixed;
     top: 0;
@@ -259,6 +258,7 @@ section > table {
   }
   .navbar.responsive .icon {
     position: absolute;
+    color: #fffff8;
     right: 0;
     top: 0;
   }
@@ -267,36 +267,27 @@ section > table {
     display: block;
     text-align: left;
     z-index: 1;
-    overflow: hidden;
   }
 }
 
 /*------ smaller screens ------*/
 
 @media (max-width: 760px) {
-    body {
-        width: 84%;
-        padding-left: 8%;
-        padding-right: 8%;
-    }
 
-    hr,
     section > p,
     section > div,
     section > table {
-        width: 100%;
+      width: 87.5%;
     }
 
-    pre > code {
-        width: 97%;
+    p, table, div {
+      padding-left: 12.5%;
     }
 
-    section > ol {
-        width: 90%;
-    }
-
-    section > ul {
-        width: 90%;
+    section#about > p,
+    section#info > p,
+    section#citations > p {
+      padding-left: 4%;
     }
 
     .reception,
@@ -304,12 +295,4 @@ section > table {
         display: none;
     }
 
-    label {
-        cursor: pointer;
-    }
-
-    div.table-wrapper,
-    table {
-        width: 85%;
-    }
 }
