@@ -203,8 +203,7 @@ section > table {
 
 /*------ navbar ------*/
 
-ol.navbar {
-  list-style-type: none;
+.navbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -216,29 +215,60 @@ ol.navbar {
   z-index: 1;
 }
 
-ol.navbar li {
+.navbar a {
   float: right;
-}
-
-ol.navbar li a {
   display: block;
   color: #fffff8;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
 }
 
-ol.navbar li a:hover {
-  background-color: #333;
-}
-
-ol.navbar li.navhome {
+.navbar .navhome {
   float: left;
 }
 
-@media (max-width: 540px) {
-  ol.navbar li,
-  ol.navbar li.navhome {float: none;}
+.navbar a:hover {
+  background-color: #333;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    z-index: 1;
+    overflow: hidden;
+  }
 }
 
 /*------ smaller screens ------*/

@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <title>lowell</title>
+  <title>A Fable for Critics</title>
   <link rel="stylesheet" href="lowellstylesimple.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
     function hoverByClass(classname, colorover, colorout = "transparent") {
@@ -23,19 +24,32 @@
       }
     }
   </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 </head>
 
 <body>
 
   <!-- MENU LINKS -->
-  <ol class="navbar">
-    <li class="navhome"><a href="#home">A Fable for Critics</a></li>
-    <li><a href="#info">Info</a></li>
-    <li><a href="#citations">Citations</a></li>
-    <li><a href="#poem">Poem</a></li>
-    <li><a href="#authors">Authors</a></li>
-    <li><a href="#about">About</a></li>
-  </ol>
+  <div class="navbar" id="myTopnav">
+    <a href="#home" class="navhome">A Fable for Critics</a>
+    <a href="#info">Info</a>
+    <a href="#citations">Citations</a>
+    <a href="#poem">Poem</a>
+    <a href="#authors">Authors</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
 
   <section id="home">
