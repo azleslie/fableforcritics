@@ -25,10 +25,20 @@
     }
   </script>
   <script>
-    function myFunction() {
+    function openMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "navbar") {
         x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+  <script>
+    function autoClose() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar responsive") {
+        x.className = "navbar";
       } else {
         x.className = "navbar";
       }
@@ -40,13 +50,13 @@
 
   <!-- MENU LINKS -->
   <div class="navbar" id="myTopnav">
-    <a href="#home" class="navhome">A Fable for Critics</a>
-    <a href="#info">Info</a>
-    <a href="#citations">Citations</a>
-    <a href="#poem">Poem</a>
-    <a href="#authors">Authors</a>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="#home" class="navhome" onclick="autoClose()">A Fable for Critics</a>
+    <a href="#info" onclick="autoClose()">Info</a>
+    <a href="#citations" onclick="autoClose()">Citations</a>
+    <a href="#poem" onclick="autoClose()">Poem</a>
+    <a href="#authors" onclick="autoClose()">Authors</a>
+    <a href="#about" onclick="autoClose()">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
