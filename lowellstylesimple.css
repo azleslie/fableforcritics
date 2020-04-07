@@ -277,22 +277,28 @@ section > table {
     section > p,
     section > div,
     section > table {
-      width: 87.5%;
+      width: 85%;
     }
 
     p, table, div {
-      padding-left: 12.5%;
+      padding-left: 12%;
     }
 
     section#about > p,
     section#info > p,
     section#citations > p {
-      padding-left: 4%;
+      padding-left: 12%;
+      width: 85%;
     }
 
     .reception,
     .reference {
         display: none;
     }
+}
 
+@media (max-width: 500px) {
+  html {
+      font-size: 10.5px;
+  }
 }
