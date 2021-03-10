@@ -69,6 +69,18 @@ a {
   color: #111;
 }
 
+img {
+  width: 45%;
+  max-width: 500px;
+  padding-left: 22.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline;
+}
+
 p {
     width: 77.5%;
     margin-left: auto;
@@ -171,7 +183,7 @@ section > table {
   padding-bottom: 10vh;
 }
 
-#about p, #authors p, #citations p, #info p {
+#about p, #authors p, #paratext p, #citations p, #info p {
   width: 77.5%;
   padding-left: 22.5%;
   margin-top: 1.4rem;
@@ -186,6 +198,11 @@ section > table {
 }
 
 #poem {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#paratext {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
