@@ -183,7 +183,7 @@ section > table {
   padding-bottom: 10vh;
 }
 
-#about p, #authors p, #paratext p, #citations p, #info p {
+#about p, #authors p, #paratext p, #reviews p, #info p, #reply p {
   width: 77.5%;
   padding-left: 22.5%;
   margin-top: 1.4rem;
@@ -207,7 +207,12 @@ section > table {
   padding-bottom: 10vh;
 }
 
-#citations {
+#reviews {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#reply {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
@@ -307,7 +312,7 @@ section > table {
 
     section#about > p,
     section#info > p,
-    section#citations > p {
+    section#reviews > p {
       padding-left: 12%;
       width: 85%;
     }
