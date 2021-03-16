@@ -325,13 +325,13 @@ section > table {
 
 @media (max-width: 500px) {
   html {
-      font-size: 9.5px;
+      font-size: 8.5px;
   }
 }
 
 @media (max-width: 400px) {
   section#poem > div {
     width: 95%;
-    padding-left: 4%
+    padding-left: 2%
   }
 }
